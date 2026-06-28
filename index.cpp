@@ -1,14 +1,22 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-template <classname t>
-class t {
-    T a, T b;
-    public:
-    T add(a,b){
-        return a+b;
+
+template <class T>
+class Calculator
+{
+public:
+    T add(T a, T b)
+    {
+        return a + b;
     }
 };
-int main(){
-    t a;
-    a.add(10,15);
+
+int main()
+{
+    Calculator<int> obj;
+    cout << obj.add(10, 15)<<endl;
+    Calculator<float> obj1;
+    cout<< obj1.add(10.1,10.3);
+
+    return 0;
 }
